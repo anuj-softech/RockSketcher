@@ -1,5 +1,11 @@
 {
   "devDependencies": {
     "@figma/plugin-typings": "^1.114.0"
+  },
+  "scripts": {
+    "c": "npx tsc"
+  },
+  "dependencies": {
+    "typescript": "^5.8.3"
   }
 }
