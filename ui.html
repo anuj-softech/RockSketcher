@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button id="convert">Rock Sketchers</button>
+<pre id="output" style="white-space: pre-wrap;"></pre>
+<script>
+    document.getElementById("convert").onclick = () => {
+        parent.postMessage({ pluginMessage: "convert" }, "*");
+    };
+
+    onmessage = (event) => {
+        document.getElementById("output").textContent = event.data.pluginMessage;
+    };
+</script>
+</body>
+</html>
